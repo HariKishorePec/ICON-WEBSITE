@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+<!--- - - - - - - - - - - -favicon---------------->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- - - -->
+
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet"> <!--font -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet"><!--font-family: 'Saira Extra Condensed', sans-serif; -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>ICON | Home</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="./bootstrap/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Custom styles-->
+  <link href="./css/scrolling-nav.css" rel="stylesheet">
+  <link href="./css/mystyle.css" rel="stylesheet">
+  <link href="./css/pagination.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/popup.css">  <!--pk file-->
+  <link rel="stylesheet" href="css/spoiler.css">
+
+  <!--<link rel="import" href="events_details.html">   -->
+  <style>
+  .magbutton {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+  </style>
+
+</head>
+
+<body id="page-top" onloadstart="myWriter()">
+
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-top:25px;" id="mainNav">
+    <div class="container container-decor">
+      <a class="navbar-brand js-scroll-trigger" href="http://icon2k19.pec.edu" style="font-size: 27px;line-height: 1;font-family: 'Spectral';max-height:20px"> <img id="logoImg" src="resource/logo.png" width="130" alt="icon_logo" /> </a> <!--style="margin-top:-65px;" //in css-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#sponsers">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#coordinators">Co-ordinator</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact"> Contact </a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger magbutton" href="./eMag.htm"> Cybyrus Magazine </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div id="videoContainer">
+  <video  autoplay poster="resource/Our-story-intro.gif" src="">
+  </video>
+  <header id="home" class="bg-primary text-white">
+    <div class="container text-center myclass1">
+      <h1 id="autotype" >Welcome to ICON 2k19</h1>  <!--Welcome to ICON 2k19, runtime typing-->
+  <!--  <p>  <span class="typer" style="font-size:20px;" id="main" data-words="A Technical fest organized by 'The HUB' <br>
+  (Students' Council of Department of CSE)" data-colors="white" data-delay="80" data-deleteDelay="100000" ></span></p>-->
+
+<p class="lead">A Technical fest organized by 'The HUB' <br> (Students' Council of Department of CSE)</p>
+      <h3>A fest to
+      <span class="typer" id="main" data-words="learn., explore., advance., socialize., unite us., energize us., have fun:)" data-colors="red, orange, yellow,#07ec68, #08fbfd" data-delay="100" data-deleteDelay="1000" ></span>
+      <span class="cursor" data-owner="main"></span><br /></h3>
+      <h4 id="timeLeft">Hurrayyy! </h4>
+
+    </div>
+  </header>
+</div>
+
+
+  <section id="about" style="background-color:black;">
+    <div class="container" id="about1" style="font-family: 'Goudy Bookletter 1911', serif;">
+      <div class="row" style="" >
+        <div class="col-lg-10 mx-auto">
+          <h2 style="text-align:center; padding: 15px;" class="title-header" >About</h2>
+           <p class="lead">ICON is an All India inter-collegiate cultural fest organised by the Computer Science Engineering department of Pondicherry Engineering College, one of
+             the premier institutions of Puducherry. ICON is back with a bang this year with its stunning Disneyland theme. C'mon, take a look at our events list and you'll be amazed to know
+           that there is something for everyone in both technical and non-technical categories. Roll out the coder, artist, photographer and the gamer within you. Mark the dates and be there at PEC auditorium on Feb 28th! We are sure you'd not regret being there.  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="myevent">
+    <div class="container">
+      <h2 class="title-header" style="text-align:center; padding-bottom:20px;">Events</h2>
+      <div class="row" style="style=/*#12*/">
+        <div class="col-lg-4 mx-auto jumbotron">
+          <h3  style="">Day 1 Events</h3>
+          <p class="lead">Date: 28.02.2019 (THU)</p>
+          <ul>
+            <a href="#event1"><li class="mylist fork">  Paper Presentation</li></a>
+            <a href="#event2"><li class="mylist">  Tech Connection </li></a>
+            <a href="#event3"><li class="mylist">Logo quiz </li></a>
+            <a href="#event4"><li class="mylist"> IPL Auction </li></a>
+            <a href="#event5"><li class="mylist"> Find the Language </li></a>
+            <a href="#event6"><li class="mylist"> Photography </li></a>
+            <a href="#event7"><li class="mylist"> Code-a-thon </li></a>
+            <a href="#event8"><li class="mylist"> Logo Design</li></a>
+            <a href="#event9"><li class="mylist"> Debugging </li></a>
+          </ul>
+        </div>
+        <div  id="events2" class="col-lg-4 mx-auto jumbotron"> <!--event2 just to hrefer-->
+          <h3 style="">Day 2 Events</h3>
+          <p class="lead">Date: 01.03.2019 (FRI)</p>
+          <ul class="">
+            <a href="#event10"><li class="mylist"> S'n'M Quiz </li></a>
+            <a href="#event11"><li class="mylist"> Web development</li></a>
+            <a href="#event12"><li class="mylist"> Play with tech </li></a>
+            <a href="#event13"><li class="mylist"> Mixpix </li></a>
+            <a href="#event14"><li class="mylist"> Adzap </li></a>
+            <a href="#event16"><li class="mylist">Techno Crunch</li></a>
+            <a href="#event17"><li class="mylist">  Google Hunt  </li></a>
+            <a href="#event18"><li class="mylist"> Showcase your talent </li></a>
+            <a href="#event15"><li class="mylist"> <del>Ressemble</del></li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsers" class="bg-light" style="padding:90px 0px;">
+    <div class="container">
+        <h2 class="title-header" style="text-align:center; padding-bottom:30px;">Sponsors</h2>
+        <div class="row" id="sponsers-row" style="style="style=/*#12*/"" >
+          <!--
+            <div class="col-md-4">
+                  <div class="thumbnail"><img class="myimage" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:200px;padding-bottom:15px;" /> </div>
+            </div>
+            <div class="col-md-4">
+                  <div class="thumbnail"><img class="myimage" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" style="width:200px;padding-bottom:15px;" /> </div>
+            </div>
+            <div class="col-md-4">
+                  <div class="thumbnail"><img class="myimage" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:200px" /> </div>
+            </div>-->
+
+            <div class="jumbotron col-lg-4" style="height=auto; vertical-align:center;" >
+			<center>
+              <img src="resource/mbit.jpg" alt="mbit_logo" width="250px" align:middle />
+			</center>
+            </div>
+			<div class="col-lg-1">
+
+            </div>
+			<div class="jumbotron col-lg-7">
+
+			<a href="./resource/sponsors.png"><img src="resource/sponsors.png" alt="sponsers_logo" width="100%" align:middle /></a>
+	
+            </div>
+
+        </div>
+      <!--  <p style="text-align:center; margin-top:30px;font-size:20px;">Our Proud Sponsors</p>-->
+    </div>
+  </section>
+
+  <section id="testimonials" style="background-color:#cccc;padding:5%;">
+    <div class="container">
+
+    <h2 style="text-align:center; padding: 15px; margin-top:-5;" class="title-header" >Testimonials</h2><br />
+    <div class="row" style="text-align: justify; text-justify: inter-word;style=/*#12*/" >
+        <div class="col-md-5 mx-auto jumbotron">
+    
+            <h4><i class="fas fa-quote-left"></i></h4>
+            <p>ICON-2k19 is launched by the meritorious students of Computer Science and Engineering Department.
+               They are vibrant with energy and display enthusiasm with great sense of unity among them to execute this unfolding event.
+                The technical and non-technical sides of this are going to be a new chapter in the history of the department. <br />
+                &emsp;&emsp; I sincerely appreciate their endeavor and wish them all success in future. </p>
+              <h4 style="text-align:right;"> Dr. P. Dananjayan, Principal</h4>
+  
+        </div>
+		<div class="col-md-5 mx-auto jumbotron">
+
+ 
+            <h4><i class="fas fa-quote-left"></i></h4>
+            <p>
+              I am extremely delighted to offer this message for the national level technical symposium ICON on 28th Feb, 2019. Department of CSE,
+              is one of the prestigious departments which has produced and shaped many laurels in the field of Computer Science and Engineering
+                imparting quality technical education.<!-- Besides, ICON offers an exciting platform for the students to cultivate and nurture their comprehensive
+                skills further to shape them more proficient in the competitive world.
+                </p>
+                <p>--><br />
+                  &emsp; &emsp; I congratulate and thank the students and my colleagues for their tireless efforts to organize one more edition of ICON and
+                  bring out Cybrus magazine. I wish them all success.
+
+
+            </p>
+              <h4 style="text-align:right;">Dr. R. Manoharan  , HOD (CSE)</h4>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="coordinators" class="bg-light" style="padding:90px 0px;">
+    <div class="container">
+        <h2 class="title-header" style="text-align:center; padding-bottom:30px;">Co-Ordinators</h2>
+        <div class="row" id="coordinators-row" style="style=/*#12*/" >  <!--sponsors row-->
+            <div class="col-md-4">
+                  <div class="thumbnail"><img class="myimage" src="resource/saliniMam2.jpg" alt="Avatar" style="width:200px;padding-bottom:15px;" />
+                    <p style="text-align:center;"> Dr. Salini P  <br />Assistant Professor, CSE </p>
+                   </div>
+            </div>
+            <div class="col-md-4 ">
+                  <div class="thumbnail"><img class="myimage " src="resource/sivaSir.jpg" alt="Avatar" style="width:200px;padding-bottom:15px;" /> </div>
+                  <p style="text-align:center;"> Dr. N. Sivakumar <br />Assistant Professor, CSE </p>
+            </div>
+            <div class="col-md-4">
+                  <div class="thumbnail"><img class="myimage" src="resource/thenmozhiMam.jpg" alt="Avatar" style="width:200px;padding-bottom:15px;" /> </div>
+                  <p style="text-align:center;"> Dr. M. Thenmozhi  <br />Assistant Professor, CSE </p>
+            </div>
+          </div>
+        <p style="text-align:center; margin-top:30px;font-size:20px;">Our Respected Coordinators</p>
+    </div>
+  </section>
+
+  <section id="contact" style="padding:90px 0px;">
+      <div class="row" style="style=/*#12*/">
+        <div class="col-lg-6 mx-auto  testbdr">
+          <h2 class="title-header" id="contact-decor">Contact us</h2>
+          <p class="lead"><b>Mr. Suvadhi Kumar</b> <br /> Seceretary, ICON <br /><i class="fas fa-phone-square"></i> +91 9003639983</p>
+          <p class="lead"><b>Mr. Kumaran V</b> <br />Joint Seceretary, ICON <br /><i class="fas fa-phone-square"></i> +91 7598958590 </p>
+          <h2 class="title-header" >Mail us</h2>
+          <p class="lead"><i class="fas fa-envelope"></i> <a href="mailto:icon2k19@gmail.com?subject=feedback/Query">icon2k19@gmail.com </a></p>
+        </div>
+        <div class="col-lg-4 testbdr">
+          <center>
+          <iframe class="mymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.83290855626!2d79.84246822764716!3d12.011942613847141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536446022cfb0b%3A0x5c0d300c8187a76b!2sPondicherry+Engineering+College!5e0!3m2!1sen!2sin!4v1550508702185" width="700" height="400" frameborder="0" style="border:0 padding:5px;" allowfullscreen></iframe>
+          </center>
+        </div>
+      </div>
+  </section>
+  <div class="social">
+    <!--
+    <div class="row">
+      <div class="col-md-4 socialText">
+        Social :
+      </div>
+     <div class="col-md-4">
+       <center>
+          <a href="www.facebook.com/icon2k19" class="fab fa-facebook-f"></a>
+       <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin-in"></a> ->
+          <a href="www.instagram.com/icon_2k19" class="fab fa-instagram"></a>
+        </center>
+      </div>
+    </div> -->
+    <center class="container social">
+       Social :
+        <a href="https://www.facebook.com/ICON-2K19-312706916018514/" class="fab fa-facebook-f"></a>
+        <a href="http://www.instagram.com/icon_2k19?utm_source=ig_profile_share&igshid=mh165yshuv64" class="fab fa-instagram"></a>
+    </center>
+  </div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white" style="font-size: 18px;font-family: 'frank ruhl libre' sans-serif;">ICON | Department of Computer Science and Engineering <br /> Pondicherry Engineering College</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+ <div class="Footer" style="text-align:center;padding:10px;background-color:#045c71;">
+   Coded with <i class="fa fa-heart" aria-hidden="true"></i> By: <a href="https://www.linkedin.com/in/hari-kishore-pec/">Hari kishore</a> & <a href="#"> Poovizhi kannan R</a>
+ </div>
+<style>
+  .Footer {
+    color: #4dd0d7;
+  }
+  .Footer a{
+    color: #4dd0d7;
+  }
+</style>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script><!--correct place-->
+  <script src="js/typer.js" type="text/javascript"></script>  <!--typer.js-->
+
+
+<!------------------------------------------------en event item click ------------------------------------------  --------------->
+<!-----code for popup-->
+<div id="event1" class="overlay" style="z-index:1999;" >
+	<div class="popup container" >
+		<a id="popup_close" onclick=""  href="#events" >&times;</a>
+    <h2 style="text-align:center;background-color:#e9ecef;padding:10px 30px;margin-bottom:10px;border-radius:5px;">Paper Presentation</h2>
+
+    <input type="checkbox"  id="spoiler000" />  <!--spoiler is id, so should be different-->
+    <label for="spoiler000" >About/Info</label>
+    <div class="spoiler">
+      <b><u>TOPICS FOR PRESENTATION:</u></b><br />
+    <!--  <ul>
+        <li>Artificial Intelligence</li>
+        <li>IOT</li>
+        <li> Machine Learning</li>
+        <li>Block Chain</li>
+        <li> Deep Learning</li>
+        <li>Cloud Computing</li>
+        <li>Image Processing</li>
+        <li>Adhoc Networks</li>
+        <li>Network Security</li>
+        <li> Information Security</li>
+        <li>Soft Computing</li>
+      </ul>
+-->
+<br />
+      <p> <b>Note: </b> You can select <mark> any topic </mark> of your choice in <mark>any domain</mark>. No domain restrictions.  </p>
+      <p> <b>Note:</b>
+      Send your abstract in softcopy to <mark> paperpresentationicon2k19@gmail.com</mark> </p>
+      <p>Please contact organisers for further details.</p>
+    </div>
+        	<input type="checkbox"  id="spoiler" />
+        	<label for="spoiler">Date, Time and Venue</label>
+        	<div class="spoiler">
+              <table>
+                <tr>
+                  <th>Date:</th><td>Feb 28, 2019</td>
+                </tr>
+                <tr>
+                  <th>Time:</th><td>11:00 AM</td>
+                </tr>
+                <tr>
+                  <th>Venue:</th>
+                  <td>
+                    <ul>
+                      <li>MCA -2nd yr classroom</li>
+                      <li>MCA -3rd yr classroom</li>
+                      <li>DCS M.Tech</li>
+                      <li>IS M.Tech </li>
+                      <li>Information Security Lab</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+          </div>
+
+        	<input type="checkbox"  id="spoiler2" />  <!--spoiler is id, so should be different-->
+        	<label for="spoiler2" >Rules</label>
+        	<div class="spoiler">
+          <b>Rules:</b><br />
+            <ol>
+              <li>Candidates should send their abstract in softcopy to <mark> paperpresentationicon2k19@gmail.com</mark>  on or before 27.02.2019.</li>
+              <li>Accepted papers will be intimated through their respective email id.</li>
+              <li>Maximum of three participants are allowed for the presentation.</li>
+              <li>Paper should be submitted as MS word and it should not exceed eight pages.</li>
+              <li>Details of the team members: Name, Department, E-mail ID, Contact number, Institution name should be sent along with the paper. </li>
+              <li>Bring your softcopies of the presentation in pendrive.</li>
+              <li>Selected candidates should bring their identity card at the time of presentation.</li>
+              <li>Selected candidates should bring three hard copies of IEEE format and softcopy of the presentation(powerpoint).</li>
+              <li>The presentation time is for 6 mins and 2 mins for queries for each paper.</li>
+            </ol>
+            <p>Please contact organisers for further details.</p>
+        	</div>
+
+        	<input type="checkbox"  id="spoiler3" />
+        	<label for="spoiler3" >Fee & Prizes</label>
+        	<div class="spoiler">
+        	  <b>Registration fee:</b> Rs. 200/-  <br />
+            <b>Prize worth: </b> Rs. 2500/-   <br />
+            <b>Disclaimer:</b> Prize money may change subject to various constraint. Details given at event venue will be final.
+        	</div>
+
+          <input type="checkbox"  id="spoiler4" />
+        	<label for="spoiler4" >Judges/Staff-in-charge</label>
+        	<div class="spoiler">
+        	   <p>Judges for this event are:</p>
+             <ol>
+                  <li>Dr. K. Vivekanandan</li>
+                  <li>Dr. N. Sreenath</li><br />
+                  <li>Dr. D. Loganathan</li>
+                  <li>Dr. M. Sugumaran</li><br />
+                  <li>Dr. G. Zayaraj</li>
+                  <li>Dr. Amuthan</li><br />
+                  <li>Dr. E. Ilavarasan</li>
+                  <li>Dr. Ka Selvaradjou</li>
+             </ol>
+        	</div>
+
+          <input type="checkbox"  id="spoiler5" />
+        	<label for="spoiler5" >Contact</label>
+        	<div class="spoiler">
+        	  <p>Organisers:</p>
+            <ol>
+              <li>Master Befy - (4th yr) - 9698746528</li>
+              <li>Master Prabhu Kumar - (3rd yr) - 9385680787</li>
+            </ol>
+        	</div>
+          <br />
+          <center>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScKTegVO_xr2myItzY23W0Nu9NIPiKWbXCAG6UPH5p3M5DGJg/viewform" class="btn btn-success" style="padding:10px 25px;margin: auto;border: 10px solid #e9ecef">Register Now</a>
+          </center>
+          <br /><br />
+  </div>
+</div>
+
+<!-------------including other event details, same as in above format of paper Presentation---->
+<div id="includedContent"></div>
+
+<script>
+    $(function(){
+      $("#includedContent").load("events_details.html");
+    });
+</script>
+<!-------------including other event details -------------------------->
+<script type="text/javascript" src="js/timer.js"> </script> <!--timer script-->
+
+</body>
+</html>

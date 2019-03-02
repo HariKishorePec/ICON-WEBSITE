@@ -1,0 +1,154 @@
+<!---------------------
+This is the layout of the popup
+//----->
+
+/*
+body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+*/
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 7% auto;
+  padding-top: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  height: 70%;
+  position: center;
+  transition: all 5s ease-in-out;
+  z-index: 2;
+}
+
+
+.popup .close {
+  /*position: absolute;*/
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00f;
+  z-index:9999;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 100%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+
+  .popup{
+    width: 70%;
+  }
+}
+
+/*
+<!----------------------------------
+This is the code for layout inside the popup
+.tab specifies the code for the button section
+.tab button specifeis the code for buttons
+.tabcontent specifies the code for the right side conntent
+Add that font to this da, whichever you were using for the first page
+//------------------------------------->*/
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+.popup .tab {
+  float: left;
+
+  background-color: #00000000;
+  width: 250px;
+  height: 100%;
+}
+
+
+.popup .tab button{
+  width: 250px;
+  background:#3475d2;
+  color:#fff;
+  border: 1px solid white;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:16px 16px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:inherit;
+}
+.popup .tab button:hover{
+  background:#fff;
+  color:#3475d2;
+}
+.popup .tab button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #3475d2;
+  transition:400ms ease all;
+}
+.popup .tab button:after{
+
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.popup .tab button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.popup .tab button.active {
+  background:#252424f5;
+  color:#3475d2;
+}
+
+.popup .tabcontent {
+  float: left;
+  padding: 0px 12px;
+
+  width: 70%;
+  border-left: none;
+  height: 100%;
+}
+
+
+<!---------------------Button2--------------->

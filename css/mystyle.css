@@ -1,0 +1,253 @@
+*{
+	font-family: 'fira sans', sans-serif;
+	
+}
+html, body {
+    height: 100%;
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+.row{
+	margin-right:0px !important;
+	margin-left:0px !important;
+}
+#logoImg{
+	margin-top:-65px;
+}
+@media (min-width:720px){
+	#logoImg{
+		width:160px;
+		margin-top:-73px;
+    }   
+	.socialText{
+		text-align:right;
+		padding:30px 0;
+		margin-top:10px;
+	}	
+}
+@media (max-width:720px){
+	#logoImg{
+		width:160px;
+		margin-top:-73px;
+    }    
+	.socialText{
+	text-align:center;
+	padding:20px 0 0 0;
+	}
+}
+
+#videoContainer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#videoContainer video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* The following will size the video to fit the full container. Not necessary, just nice.*/
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
+#videoContainer div {
+    position: relative;
+    z-index: 1;
+}
+#page-top{
+	font-family: 'Spectral', serif;
+	font-weight: bolder;
+}
+
+.myclass1{
+	font-size:32px;
+	background-color: rgba(0,0,0,0.6);
+	padding: 4%;
+	max-width:700px;
+	margin: auto;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+
+
+#myVideotest {
+  /*position: fixed;*/
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.container-decor{
+	font-size:20px;
+}
+#about{
+	background-color: black;
+	
+}
+#about1{
+	background-color: #191919;
+	color: #fff;
+	padding: 25px;
+	text-align: justify;
+	text-justify: inter-word;
+	font-family: 'Goudy Bookletter 1911', sans-serif;
+}
+.title-header{
+	font-weight:bolder;
+}
+.subtitle-header{
+	font-weight:bold;
+	font-size:25px;
+}
+#contact-decor{
+	margin-left: -15px;
+	margin-bottom: 10px;
+}
+
+.myevent{
+	padding:5%;
+	background-color:#cce1ae;
+	text-align:center;
+	background:url("../resource/img1.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.myevent ul{
+	list-style-type:none;
+	font-size:20px;
+	margin-left:-20px;
+	float:center;
+}
+.mylist {
+  background-color: #000;/*#f4511e; reddish*/
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.65;
+  transition: 0.3s;
+  font-size:20px;
+}
+.mylist a{
+	color:#fff;
+}
+.mylist:hover {opacity: 1}
+
+#register-btn{
+	padding:10px 20px;
+	margin-top: 20px;
+}
+.mymap{
+	float: right;
+}
+.mypadding{
+	padding-left:25px;
+}
+.myborder{
+	padding:10px;
+	border: 1px solid #cebebe;
+}
+.testbdr{
+	
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+	align: center;
+}
+/*
+@media (max-width:720px){
+	.testbdr{
+		width:300px;
+	}
+}*/
+.myimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+ /* filter: grayscale(100%);*/
+  text-align:center;
+}
+
+@media (max-width:720px){
+	.myimage{
+		filter: grayscale(0%);
+	}
+}
+@media (min-width:720px){
+	.myimage{
+		filter: grayscale(100%);
+	}
+	.myimage:hover{
+		filter: grayscale(0%);
+	}
+}
+
+#sponsors-row{
+	padding:20px;
+}
+
+.social{
+	background-color:#456;
+	color: white;
+	margin:auto;
+}
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  height:74px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 20px;
+
+ /* border-radius:50%;*/
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  
+}
+
+.fab:hover {
+	color:white;
+	
+}
+
+.fa-facebook-f {
+  background: #0031D5; /*#3B5998;*/
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin-in{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e9087a;
+  color: white;
+  margin-top:7px;
+}
+

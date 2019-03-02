@@ -1,0 +1,50 @@
+input[id^="spoiler"]{
+ display: none;
+}
+input[id^="spoiler"] + label { /*altered for small device*/
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background: #2d11ee;/*#e1a;#1191ee*/
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .6s;
+}
+input[id^="spoiler"]:checked + label {
+  color: #333;
+  background: #ccc;
+}
+input[id^="spoiler"] ~ .spoiler {
+  width: 100%;
+  height: 0;
+  padding-left: 20px;
+  overflow: hidden;
+  opacity: 0;
+  margin: 2px ; /*10 px*/
+  margin-bottom: 10px;
+  padding: 4px; /*10 px*/
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all .6s;
+}
+input[id^="spoiler"]:checked + label + .spoiler{
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  padding-left: 5%;
+}
+
+/*media query added*/
+@media (max-width:720px){
+	input[id^="spoiler"] + label {
+      font-size: 18px;
+  }
+  input[id^="spoiler"] ~ .spoiler {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,176 @@
+<!---------------------
+This is the layout of the popup
+//----->
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  /*margin: 80px 0;*/
+}
+
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: opacity 1000ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 7% auto;
+  padding-top: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+  position: center;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+  overflow-y:auto;
+  
+}
+@media (max-width:720px){
+	.popup {
+		
+	}
+}
+
+.popup .close1 {
+  /*position: absolute;
+  top: 20px;
+  right: 30px;*/
+  transition: all 200ms;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00f;
+}
+#popup_close{
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  float:right;
+  margin-right:1%;
+  margin-top:10px;
+  background-color:#c30909;
+  border-radius:50%;
+  text-align:center;
+  align:center;
+  height:35px;
+  width:35px;
+  line-height:35px;
+}
+#popup_close:hover {
+  color: #06D85F;
+  text-decoration: none;
+}
+.popup .content {
+  max-height: 100%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .popup{
+    width: 90%;
+	margin: 15% auto;
+  }
+}
+
+
+<!----------------------------------
+This is the code for layout inside the popup
+.tab specifaes the code for the button section
+.tab button specifeis the code for buttons
+.tabcontent specifies the code for the right side conntent
+Add that font to this da, whichever you were using for the first page
+//------------------------------------->
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+.popup .tab {
+  float: left;
+
+  background-color: #00000000;
+  width: 250px;
+  height: 100%;
+}
+
+
+.popup .tab button{
+  width: 250px;
+  background:#3475d2;
+  color:#fff;
+  border: 1px solid white;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:16px 16px;
+  cursor:pointer;
+  transition:500ms ease all;
+  outline:inherit;
+}
+.popup .tab button:hover{
+  background:#fff;
+  color:#3475d2;
+}
+.popup .tab button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #3475d2;
+  transition:200ms ease all;
+}
+.popup .tab button:after{
+
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.popup .tab button:hover:before,button:hover:after{
+  width:100%;
+  transition:400ms ease all;
+}
+
+.popup .tab button.active {
+  background:#252424f5;
+  color:#3475d2;
+}
+
+.popup .tabcontent {
+  float: left;
+  padding: 0px 12px;
+
+  width: 70%;
+  border-left: none;
+  height: 100%;
+}
+
+
+<!---------------------Button2--------------->
