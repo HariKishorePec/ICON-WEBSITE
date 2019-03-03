@@ -9,7 +9,7 @@ This is a real life project to handle our college function for our department.
   
   <h2>About</h2>
   <p>
-  It is a one page website, with spreads over 2000 LOC  and because of larger size it has been splitted in multiple files.( and linked using JS). It basically uses a very simplt template(one and only), which you can see here. 
+  It is a one page website, with spreads over 2000 LOC  and because of larger size it has been splitted in multiple files.( and linked using JS). It basically uses a very simple template(one and only), which you can see here. 
   </p>
   
  <h2>Technologies used</h2>
@@ -37,3 +37,5 @@ This is a real life project to handle our college function for our department.
   <li>Extract to any location of your choice.</li>
   <li>Run index.html (using Chrome/Firefox/Safari)</li>
   </ol>
+  
+ 
