@@ -18,7 +18,7 @@ This is a real life project to handle our college function for our department.
   <li>Bootstrap</li>
   <ul>
     
-  <h3>Library used</h3>
+  <h2>Library used</h2>
   <ul>
   
   <li>Jquery (3.3.1)</li>
@@ -28,7 +28,7 @@ This is a real life project to handle our college function for our department.
   <li>Animate.JS</li>
   </ul>
 
-<h2>Steps</h2>
+<h2>Steps </h2>
 <ol>
   <li></li>
   <li></li>
