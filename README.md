@@ -9,7 +9,7 @@ This is a real life project to handle our college function for our department.
   
   <h2>About</h2>
   <p>
-  It is a one page website, with spreads over 2000 LOC  and because of larger size it has been splitted in multiple files.( and linked using JS). It basically uses a very simple template(one and only), which you can see <a href="https://blackrockdigital.github.io/startbootstrap-scrolling-nav" target="_blank">here.</a> and find on github <a href="https://github.com/BlackrockDigital/startbootstrap-scrolling-nav" target="_blank">here.</a> 
+  It is a one page website, with spreads over 2000 LOC  and because of larger size it has been splitted in multiple files.( and linked using JS). It basically uses a very simple template(one and only), which you can see <a href="https://blackrockdigital.github.io/startbootstrap-scrolling-nav" target="_blank" >here.</a> and find on github <a href="https://github.com/BlackrockDigital/startbootstrap-scrolling-nav" target='_blank' >here.</a> 
   </p>
   
  <h2>Technologies used</h2>
