@@ -3,7 +3,7 @@ This is a real life project to handle our college function for our department.
 <p>
  The website was created almost from the scratch using some of predefined JS libraries and Bootstrap.
  <br>
- Have a look at its Demo <a href="https://harikishorepec.github.io/ICON-WEBSITE/">here</a> or its deployment <a href="http://icon2k19.pec.edu">here</a>, which has been deployed on a institute subdomain.<br><br>
+ Have a look at its <a href="https://harikishorepec.github.io/ICON-WEBSITE/"> demo here </a> or its  <a href="http://icon2k19.pec.edu"> deployment here</a>, which has been deployed on our institute's subdomain.<br><br>
   <b>Note: </b> To give you a actual view, the content has not been altered. So you are requested to change the content and not to tamper with original content.
   <br>
   
